@@ -135,7 +135,7 @@ const Property = () => {
                   onClick={() => cancelBooking()}
                   disabled={cancelling}
                 >
-                  <span>Cancel booking</span>
+                  <span>Cancel Application</span>
                 </Button>
                 <span>
                   Your visit already booked for date{" "}
@@ -149,7 +149,7 @@ const Property = () => {
                   validateLogin() && setModalOpened(true);
                 }}
               >
-                Book your visit
+                Apply Now
               </button>
             )}
 
