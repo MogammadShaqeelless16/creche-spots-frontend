@@ -13,6 +13,7 @@ import UserDetailContext from "./context/UserDetailContext";
 import Bookings from "./pages/Bookings/Bookings";
 import Favourites from "./pages/Favourites/Favourites";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ function App() {
                     <Route index element={<Properties />} />
                     <Route path=":propertyId" element={<Property />} />
                   </Route>
+                  <Route path="/contact" element={<Contact />} />
                   <Route path="/bookings" element={<Bookings />} />
                   <Route path="/favourites" element={<Favourites />} />
                 </Route>

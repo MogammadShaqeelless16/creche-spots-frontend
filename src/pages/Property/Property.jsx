@@ -83,13 +83,13 @@ const Property = () => {
             <div className="flexStart head">
               <span className="primaryText">{data?.title}</span>
               <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                R {data?.price}
+                R {data?.price} Per Month
               </span>
             </div>
 
             {/* facilities */}
             <div className="flexStart facilities">
-              {/* bathrooms */}
+              {/* Teachers */}
               <div className="flexStart facility">
                 <FaChalkboard size={20} color="#1F3E72" />
                 <span>{data?.facilities?.bathrooms} Teacher</span>

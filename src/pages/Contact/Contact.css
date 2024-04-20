@@ -1,0 +1,113 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .contact-form select,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    min-height: 120px;
+  }
+  
+  .contact-form button {
+    padding: 12px 20px;
+    background-color: #4066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3352c8;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .contact-details h3 {
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .contact-details p {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .blog-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .blog-box p {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .blog-box button {
+    padding: 10px 20px;
+    background-color: #4066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-box button:hover {
+    background-color: #3352c8;
+  }
+  

@@ -15,7 +15,7 @@ const PropertyCard = ({card}) => {
       <img src={card.image} alt="home" />
       <span className="secondaryText r-price">
         <span style={{ color: "orange" }}>R </span>
-        <span>{card.price}</span>
+        <span>{card.price} Per Month</span>
       </span>
       <span className="primaryText">{truncate(card.title, {length: 15})}</span>
       <span className="secondaryText">{truncate(card.description, {length: 80})}</span>
