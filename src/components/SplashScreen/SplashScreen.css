@@ -1,0 +1,33 @@
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Optional: Add a background color for better visualization */
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    stroke: var(--green);
+    fill: transparent;
+    stroke-dasharray: 565;
+    stroke-dashoffset: 565;
+    animation: draw 3s ease-in-out forwards;
+    paint-order: stroke;
+    margin: 0 auto;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 565;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
