@@ -6,7 +6,7 @@ import { PuffLoader } from "react-spinners";
 import { AiFillHeart } from "react-icons/ai";
 import "./Property.css";
 
-import { FaShower } from "react-icons/fa";
+import { FaChalkboard  } from "react-icons/fa";
 import { AiTwotoneCar } from "react-icons/ai";
 import { MdLocationPin, MdMeetingRoom } from "react-icons/md";
 import Map from "../../components/Map/Map";
