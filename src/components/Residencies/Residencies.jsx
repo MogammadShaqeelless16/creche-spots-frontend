@@ -40,7 +40,7 @@ const Residencies = () => {
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Best Choices</span>
-          <span className="primaryText">Popular Residencies</span>
+          <span className="primaryText">Popular Creches</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />

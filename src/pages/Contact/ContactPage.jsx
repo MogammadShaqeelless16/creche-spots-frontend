@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
 import "./Contact.css"; // Import your CSS file for styling
-
-const Contact = () => {
+import Contact from "../../components/Contact/Contact";
+const ContactPage = () => {
   const { isError, isLoading } = useProperties();
   const [selectedIssue, setSelectedIssue] = useState("");
   const [message, setMessage] = useState("");
@@ -34,6 +34,7 @@ const Contact = () => {
 
   return (
     <div className="wrapper">
+    <Contact/>
       <div className="contact-container">
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit} className="contact-form">
@@ -68,10 +69,16 @@ const Contact = () => {
           <p>Nulla fringilla, tortor eu efficitur fermentum, tortor massa accumsan justo, vel dapibus nisl justo vel libero.</p>
           <button>Read More</button>
         </div>
+        <div className="blog-box">
+          <h3>Tips and Tricks for Making the Most of CrecheSpots</h3>
+          <p>Nulla fringilla, tortor eu efficitur fermentum, tortor massa accumsan justo, vel dapibus nisl justo vel libero.</p>
+          <button>Read More</button>
+        </div>
+        
         {/* Add more blog boxes as needed */}
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactPage;

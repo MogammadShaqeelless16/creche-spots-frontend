@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { Box, Button, Group, NumberInput } from "@mantine/core";
+import { Box, Button, Group, NumberInput  } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import React, { useContext } from "react";
 import UserDetailContext from "../../context/UserDetailContext";
@@ -86,12 +86,17 @@ const Facilities = ({
       >
         <NumberInput
           withAsterisk
-          label="No of Bedrooms"
+          label="No of Teachers"
           min={0}
           {...form.getInputProps("bedrooms")}
         />
         <NumberInput
-          label="No of Parkings"
+          label="No of Students"
+          min={0}
+          {...form.getInputProps("parkings")}
+        />
+        <NumberInput
+          label="No of Students"
           min={0}
           {...form.getInputProps("parkings")}
         />
