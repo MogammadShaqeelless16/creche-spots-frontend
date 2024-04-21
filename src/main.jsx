@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      domain="dev-5ajz6wwswmkvdwtb.us.auth0.com"
      clientId="kL6qnQ2Rb0VnTFUXs8J2uWXSLxvMYtta"
      authorizationParams={{
-      redirect_uri: "http://localhost:5173/"
+      redirect_uri: "https://crechespots.onrender.com"
      }}
-     audience="http://localhost:8000"
+     audience="https://creche-spots-backend.onrender.com"
      scope="openid profile email"
     >
       <App />
