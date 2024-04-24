@@ -19,6 +19,7 @@ const Facilities = ({
       bedrooms: propertyDetails.facilities.bedrooms,
       parkings: propertyDetails.facilities.parkings,
       bathrooms: propertyDetails.facilities.bathrooms,
+      bathrooms: propertyDetails.facilities.bathrooms,
     },
     validate: {
       bedrooms: (value) => (value < 1 ? "Must have atleast one room" : null),
@@ -91,12 +92,12 @@ const Facilities = ({
           {...form.getInputProps("bedrooms")}
         />
         <NumberInput
-          label="No of Students"
+          label="Max Students"
           min={0}
           {...form.getInputProps("parkings")}
         />
         <NumberInput
-          label="No of Students"
+          label="Max Students"
           min={0}
           {...form.getInputProps("parkings")}
         />

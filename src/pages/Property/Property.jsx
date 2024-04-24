@@ -7,7 +7,7 @@ import { AiFillHeart } from "react-icons/ai";
 import "./Property.css";
 
 import { FaChalkboard  } from "react-icons/fa";
-import { AiTwotoneCar } from "react-icons/ai";
+import { AiOutlineUser  } from "react-icons/ai";
 import { MdLocationPin, MdMeetingRoom , MdPhone, MdEmail } from "react-icons/md";
 import Map from "../../components/Map/Map";
 import useAuthCheck from "../../hooks/useAuthCheck";
@@ -97,8 +97,8 @@ const Property = () => {
 
               {/* parkings */}
               <div className="flexStart facility">
-                <AiTwotoneCar size={20} color="#1F3E72" />
-                <span>{data?.facilities.parkings} Parking</span>
+                <AiOutlineUser  size={20} color="#1F3E72" />
+                <span>{data?.facilities.parkings} Max Students</span>
               </div>
 
               {/* rooms */}
