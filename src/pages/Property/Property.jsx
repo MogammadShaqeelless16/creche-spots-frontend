@@ -8,7 +8,7 @@ import "./Property.css";
 
 import { FaChalkboard  } from "react-icons/fa";
 import { AiTwotoneCar } from "react-icons/ai";
-import { MdLocationPin, MdMeetingRoom } from "react-icons/md";
+import { MdLocationPin, MdMeetingRoom , MdPhone, MdEmail } from "react-icons/md";
 import Map from "../../components/Map/Map";
 import useAuthCheck from "../../hooks/useAuthCheck";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -103,8 +103,13 @@ const Property = () => {
 
               {/* rooms */}
               <div className="flexStart facility">
-                <MdMeetingRoom size={20} color="#1F3E72" />
-                <span>{data?.facilities.bedrooms} Room/s</span>
+                <MdPhone size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} Phone</span>
+              </div>
+
+              <div className="flexStart facility">
+                <MdEmail  size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} Email</span>
               </div>
             </div>
 
