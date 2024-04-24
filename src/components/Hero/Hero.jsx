@@ -3,6 +3,24 @@ import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import SearchBar from "../SearchBar/SearchBar";
 const Hero = () => {
+
+  const [crecheCount, setCrecheCount] = useState(null);
+
+  useEffect(() => {
+    // Fetch creche count from backend API
+    const fetchCrecheCount = async () => {
+      try {
+        const response = await fetch('/api/residency/count'); // Replace '/api/creches/count' with your actual API endpoint
+        const data = await response.json();
+        setCrecheCount(data.count);
+      } catch (error) {
+        console.error('Error fetching creche count:', error);
+      }
+    };
+
+    fetchCrecheCount();
+  }, []);
+  
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
@@ -30,8 +48,13 @@ const Hero = () => {
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
-              <span>
-                <CountUp start={8800} end={9000} duration={4} /> <span>+</span>
+            <span>
+                {crecheCount !== null ? (
+                  <CountUp start={0} end={crecheCount} duration={4} />
+                ) : (
+                  'Loading...'
+                )}{' '}
+                <span>+</span>
               </span>
               <span className="secondaryText">Creche Registered</span>
             </div>

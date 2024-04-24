@@ -15,7 +15,7 @@ const useBookings = () => {
     onSuccess: (data) =>
       setUserDetails((prev) => ({ ...prev, bookings: data })),
     enabled: user !== undefined,
-    staleTime: 30000,
+    staleTime: 300,
   });
 
   queryRef.current = refetch;
