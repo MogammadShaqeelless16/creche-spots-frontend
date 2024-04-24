@@ -10,7 +10,7 @@ const Hero = () => {
     // Fetch creche count from backend API
     const fetchCrecheCount = async () => {
       try {
-        const response = await fetch('/api/residency/count'); // Replace '/api/creches/count' with your actual API endpoint
+        const response = await fetch('/residency/allresd'); // Replace '/api/creches/count' with your actual API endpoint
         const data = await response.json();
         setCrecheCount(data.count);
       } catch (error) {

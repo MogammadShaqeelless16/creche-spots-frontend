@@ -15,7 +15,7 @@ const useFavourites = () => {
     onSuccess: (data) =>
       setUserDetails((prev) => ({ ...prev, favourites: data })),
     enabled: user !== undefined,
-    staleTime: 30000,
+    staleTime: 300,
   });
 
   queryRef.current = refetch;
