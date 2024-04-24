@@ -19,7 +19,6 @@ const Facilities = ({
       bedrooms: propertyDetails.facilities.bedrooms,
       parkings: propertyDetails.facilities.parkings,
       bathrooms: propertyDetails.facilities.bathrooms,
-      bathrooms: propertyDetails.facilities.bathrooms,
     },
     validate: {
       bedrooms: (value) => (value < 1 ? "Must have atleast one room" : null),
