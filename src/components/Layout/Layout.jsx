@@ -27,7 +27,7 @@ const Layout = () => {
 
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
-          audience: "https://creche-spots-backend.onrender.com/",
+          audience: "https://creche-spots-backend.onrender.com",
           scope: "openid profile email",
         },
       });
