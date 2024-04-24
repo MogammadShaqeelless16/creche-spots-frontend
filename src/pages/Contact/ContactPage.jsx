@@ -35,29 +35,6 @@ const ContactPage = () => {
   return (
     <div className="wrapper">
     <Contact/>
-      <div className="contact-container">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit} className="contact-form">
-          <label htmlFor="issue">Select Issue:</label>
-          <select id="issue" value={selectedIssue} onChange={(e) => setSelectedIssue(e.target.value)}>
-            <option value="">Select</option>
-            <option value="Technical">Technical Issue</option>
-            <option value="Billing">Billing Issue</option>
-            <option value="General">General Inquiry</option>
-          </select>
-          <textarea
-            placeholder="Type your message here..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        <div className="contact-details">
-          <h3>Contact Numbers:</h3>
-          <p>Customer Service: 123-456-7890</p>
-          <p>Sales: 987-654-3210</p>
-        </div>
-      </div>
       <div className="blog-boxes">
         <div className="blog-box">
           <h3>How to Use CrecheSpots: A Beginner's Guide</h3>
