@@ -47,7 +47,9 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
 
             {/* add property */}
-            <div onClick={handleAddPropertyClick}>Add Creche</div>
+            {!isAuthenticated && (
+              <div onClick={handleAddPropertyClick}>Add Creche</div>
+            )}
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
             {/* login button */}
             {!isAuthenticated ? (
