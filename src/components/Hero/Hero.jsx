@@ -29,8 +29,6 @@ const Hero = () => {
             <span>Discover Care, Find CrecheSpot.</span>
           </div>
 
-          <SearchBar/>
-
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
             <span>
