@@ -72,7 +72,10 @@ const Property = () => {
         <div className="like">
           <Heart id={id}/>
         </div>
-
+        <span className="primaryText">{data?.title}</span>
+        <span className="orangeText" style={{ fontSize: "1.5rem" }}>
+                R {data?.price} Per Month
+              </span>
         {/* image */}
         <img src={data?.image} alt="home image" />
 
@@ -81,10 +84,8 @@ const Property = () => {
           <div className="flexColStart left">
             {/* head */}
             <div className="flexStart head">
-              <span className="primaryText">{data?.title}</span>
-              <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                R {data?.price} Per Month
-              </span>
+
+
             </div>
 
             {/* facilities */}
