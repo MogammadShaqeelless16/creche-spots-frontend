@@ -19,7 +19,7 @@ const ProfileMenu = ({user, logout}) => {
             </Menu.Item>
 
             <Menu.Item onClick={()=> navigate("./bookings", {replace: true})}>
-                Bookings
+                Applications
             </Menu.Item>
 
             <Menu.Item onClick={()=>{

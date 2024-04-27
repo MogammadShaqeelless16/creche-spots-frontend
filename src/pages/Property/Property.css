@@ -29,6 +29,19 @@
     gap: 1.5rem;
 }
 
+.register{
+    align-self: end;
+    position: absolute;
+    height: 100%;
+    padding-top: 5%;
+
+}
+
+.register img{
+    height: 10%;
+
+}
+
 .property-details .left .head{
     justify-content: space-between;
     width: 100%;

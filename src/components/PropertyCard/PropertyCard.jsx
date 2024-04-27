@@ -17,7 +17,7 @@ const PropertyCard = ({card}) => {
         <span style={{ color: "orange" }}>R </span>
         <span>{card.price} Per Month</span>
       </span>
-      <span className="primaryText">{truncate(card.title, {length: 15})}</span>
+      <span className="primaryText">{truncate(card.title, {length: 20})}</span>
       <span className="secondaryText">{truncate(card.description, {length: 80})}</span>
     </div>
   );
