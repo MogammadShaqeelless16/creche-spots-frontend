@@ -6,14 +6,13 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import * as ELG from 'esri-leaflet-geocoder'
 
-let DefaulIcon = L.icon ({
+let DefaultIcon = L.icon ({
     iconUrl : icon, 
     shadowUrl: iconShadow
 })
-L.Marker.prototype.options.icon = DefaulIcon
+L.Marker.prototype.options.icon = DefaultIcon
 
-
-const GeoCoderMarker = ({address}) => {
+const GeoCoderMarker = ({ address }) => {
 
     const map = useMap()
     const [position, setPosition] = useState([60, 19])
@@ -21,18 +20,28 @@ const GeoCoderMarker = ({address}) => {
     useEffect(()=> {
         ELG.geocode().text(address).run((err, results, response)=> {
             if(results?.results?.length > 0){
-                const {lat, lng} = results?.results[0].latlng
+                const { lat, lng } = results?.results[0].latlng
                 setPosition([lat, lng])
                 map.flyTo([lat, lng], 16)
             }
         })
     }, [address])
 
-  return (
-    <Marker position={position} icon={DefaulIcon}>
-        <Popup/>
-    </Marker>
-  )
+    const openGoogleMaps = () => {
+        const [lat, lng] = position;
+        window.open(`https://www.google.com/maps?q=${lat},${lng}`, '_blank');
+    };
+
+    return (
+        <Marker position={position} icon={DefaultIcon}>
+            <Popup>
+                <div>
+                    <p>{address}</p>
+                    <button onClick={openGoogleMaps}>Open in Google Maps</button>
+                </div>
+            </Popup>
+        </Marker>
+    )
 }
 
 export default GeoCoderMarker
