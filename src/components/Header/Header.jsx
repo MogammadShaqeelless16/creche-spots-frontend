@@ -19,9 +19,8 @@ const Header = () => {
 
 
   const handleAddPropertyClick = () => {
-    if (validateLogin()) {
       setModalOpened(true);
-    }
+
   };
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
@@ -47,9 +46,7 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
 
             {/* add property */}
-            {!isAuthenticated && (
               <div onClick={handleAddPropertyClick}>Add Creche</div>
-            )}
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
             {/* login button */}
             {!isAuthenticated ? (

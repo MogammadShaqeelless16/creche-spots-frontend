@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput, Box, Textarea, Group, Button, NumberInput } from "@mantine/core";
+import { TextInput, Box, Textarea, Group, Button, NumberInput , Switch } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { validateString } from "../../utils/common";
 
@@ -7,6 +7,7 @@ const BasicDetails = ({ prevStep, nextStep, propertyDetails, setPropertyDetails 
   const form = useForm({
     initialValues: {
       title: propertyDetails.title,
+      registered: propertyDetails.registered,
       description: propertyDetails.description,
       price: propertyDetails.price,
     },
@@ -40,6 +41,14 @@ const BasicDetails = ({ prevStep, nextStep, propertyDetails, setPropertyDetails 
           placeholder="Creches Name"
           {...form.getInputProps("title")}
         />
+        <br></br>
+        <Switch
+          withAsterisk
+          label="Registered"
+          placeholder=""
+          {...form.getInputProps("register")}
+        />
+        <br></br>
         <Textarea
           placeholder="Description"
           label="Description"
