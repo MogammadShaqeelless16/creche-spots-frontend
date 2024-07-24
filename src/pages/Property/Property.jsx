@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import registeredImage from '/Registered.png';
 import { useMutation, useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import { getProperty, removeBooking } from "../../utils/api";
@@ -8,7 +9,8 @@ import "./Property.css";
 
 import { FaChalkboard  } from "react-icons/fa";
 import { AiOutlineUser  } from "react-icons/ai";
-import { MdLocationPin, MdMeetingRoom , MdPhone, MdEmail } from "react-icons/md";
+import { MdLocationPin, MdMeetingRoom, MdPhone, MdEmail, MdLanguage } from "react-icons/md";
+import { FaWhatsapp, FaFacebook } from 'react-icons/fa';
 import Map from "../../components/Map/Map";
 import useAuthCheck from "../../hooks/useAuthCheck";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -17,6 +19,7 @@ import UserDetailContext from "../../context/UserDetailContext.js";
 import { Button } from "@mantine/core";
 import { toast } from "react-toastify";
 import Heart from "../../components/Heart/Heart";
+import Registered from "../../components/Registered/Registered.jsx";
 const Property = () => {
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
@@ -72,7 +75,11 @@ const Property = () => {
         <div className="like">
           <Heart id={id}/>
         </div>
-
+        <span className="primaryText">{data?.title}</span>
+        <span className="orangeText" style={{ fontSize: "1.5rem" }}>
+                R {data?.price} Per Month
+        </span>
+        <Registered />
         {/* image */}
         <img src={data?.image} alt="home image" />
 
@@ -81,10 +88,37 @@ const Property = () => {
           <div className="flexColStart left">
             {/* head */}
             <div className="flexStart head">
-              <span className="primaryText">{data?.title}</span>
-              <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                R {data?.price} Per Month
-              </span>
+
+
+            </div>
+
+              {/* Socials */}
+              <div className="flexStart facilities">
+              {/* rooms */}
+              <div className="flexStart facility">
+                <MdPhone size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms}</span>
+              </div>
+
+              <div className="flexStart facility">
+                <MdEmail  size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} </span>
+              </div>
+
+              <div className="flexStart facility">
+                <MdLanguage  size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} </span>
+              </div>
+
+              <div className="flexStart facility">
+                <FaWhatsapp  size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} </span>
+              </div>
+
+              <div className="flexStart facility">
+                <FaFacebook  size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} </span>
+              </div>
             </div>
 
             {/* facilities */}
@@ -101,16 +135,6 @@ const Property = () => {
                 <span>{data?.facilities.parkings} Max Students</span>
               </div>
 
-              {/* rooms */}
-              <div className="flexStart facility">
-                <MdPhone size={20} color="#1F3E72" />
-                <span>{data?.facilities.bedrooms} Phone</span>
-              </div>
-
-              <div className="flexStart facility">
-                <MdEmail  size={20} color="#1F3E72" />
-                <span>{data?.facilities.bedrooms} Email</span>
-              </div>
             </div>
 
             {/* description */}

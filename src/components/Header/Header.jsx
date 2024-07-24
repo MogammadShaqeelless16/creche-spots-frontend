@@ -19,9 +19,8 @@ const Header = () => {
 
 
   const handleAddPropertyClick = () => {
-    if (validateLogin()) {
       setModalOpened(true);
-    }
+
   };
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
