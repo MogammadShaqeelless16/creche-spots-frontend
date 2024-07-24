@@ -17,10 +17,12 @@ const Header = () => {
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
   const { validateLogin } = useAuthCheck();
 
+  // Define the namespace used in the Auth0 Action
+  const namespace = 'https://crechespots.app/';
+  
   // Function to check for the specific role token
   const hasRoleToken = (roleToken) => {
-    const namespace = 'https://crechespots.onrender.com/';
-    return user && user[namespace + 'roles'] && user[namespace + 'roles'].includes(roleToken);
+    return user && user[`${namespace}roles`] && user[`${namespace}roles`].includes(roleToken);
   };
 
   const handleAddPropertyClick = () => {
