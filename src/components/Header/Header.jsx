@@ -17,11 +17,16 @@ const Header = () => {
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
   const { validateLogin } = useAuthCheck();
 
+  // Function to check for the specific role token
+  const hasRoleToken = (roleToken) => {
+    const namespace = 'https://crechespots.onrender.com/';
+    return user && user[namespace + 'roles'] && user[namespace + 'roles'].includes(roleToken);
+  };
 
   const handleAddPropertyClick = () => {
-      setModalOpened(true);
-
+    setModalOpened(true);
   };
+
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
@@ -37,7 +42,6 @@ const Header = () => {
           }}
         >
           <div
-            // ref={menuRef}
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
@@ -46,7 +50,7 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
 
             {/* add property */}
-            {isAuthenticated && (
+            {isAuthenticated && hasRoleToken('rol_LHZcWfFRBAdOsjgA') && (
               <div onClick={handleAddPropertyClick}>Add Creche</div>
             )}
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
