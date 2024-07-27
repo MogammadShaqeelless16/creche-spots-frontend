@@ -38,9 +38,9 @@ const Value = () => {
 
         {/* right */}
         <div className="flexColStart v-right">
-          <span className="orangeText">Our Value</span>
+          <span className="orangeText">How to get started</span>
 
-          <span className="primaryText">Value We Give to You</span>
+          <span className="primaryText">3 Easy Steps</span>
 
           <span className="secondaryText">
             We always ready to help by providing the best services for you.
