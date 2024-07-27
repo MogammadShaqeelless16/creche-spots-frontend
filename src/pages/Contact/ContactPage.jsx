@@ -37,18 +37,18 @@ const ContactPage = () => {
     <Contact/>
       <div className="blog-boxes">
         <div className="blog-box">
-          <h3>How to Use CrecheSpots: A Beginner's Guide</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio ut nisl tempus, vitae bibendum lacus consectetur.</p>
-          <button>Read More</button>
+          <h3>How to get your creche registered</h3>
+          <p>Fill in the application form to get registered with us.</p>
+          <button>Apply</button>
         </div>
         <div className="blog-box">
-          <h3>Tips and Tricks for Making the Most of CrecheSpots</h3>
-          <p>Nulla fringilla, tortor eu efficitur fermentum, tortor massa accumsan justo, vel dapibus nisl justo vel libero.</p>
-          <button>Read More</button>
+          <h3>How to use Creche Spots app</h3>
+          <p>Use the document to show you a step by step guide on how to use the app.</p>
+          <button>Download</button>
         </div>
         <div className="blog-box">
-          <h3>Tips and Tricks for Making the Most of CrecheSpots</h3>
-          <p>Nulla fringilla, tortor eu efficitur fermentum, tortor massa accumsan justo, vel dapibus nisl justo vel libero.</p>
+          <h3>DOnate to Creches</h3>
+          <p>Donate to creches registered with Creche Spots.</p>
           <button>Read More</button>
         </div>
         
