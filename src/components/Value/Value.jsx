@@ -43,9 +43,7 @@ const Value = () => {
           <span className="primaryText">3 Easy Steps</span>
 
           <span className="secondaryText">
-            We always ready to help by providing the best services for you.
-            <br />
-            We believe a good place to live can make your life better
+            Follow these steps, to easily register, complete your profile, and start exploring and enrolling in the services offered on our site.
           </span>
 
           <Accordion

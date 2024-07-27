@@ -22,7 +22,7 @@ const data = [
     icon: <MdAnalytics />,
     heading: "Step 3",
     detail:
-      "Our aim is to become the go-to platform for families seeking reliable childcare solutions and to continuously improve the standards of care across all creche facilities.",
+      "Browse our available programs and services, select the creche that suits your needs, and complete the application form to enroll.",
   },
 ];
 export default data;
