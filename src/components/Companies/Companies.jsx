@@ -7,7 +7,7 @@ const Companies = () => {
         <img src="./prologis.png" alt="" />
         <img src="./tower.png" alt="" />
         <img src="./AYOBA.jpg" alt="" />
-        <img src="./realty.png" alt="" />
+        <img src="./Chenosis.png" alt="" />
       </div>
     </section>
   );
