@@ -50,7 +50,7 @@ const Header = () => {
             <NavLink to="/properties">Creches</NavLink>
 
             <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="/contact">Creche Portal</NavLink>
+            <NavLink to="https://crechespot.netlify.app/">Creche Portal</NavLink>
 
             {/* add property */}
             {isAuthenticated && hasRoleToken('rol_LHZcWfFRBAdOsjgA') && (
