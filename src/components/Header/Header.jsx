@@ -49,9 +49,14 @@ const Header = () => {
           >
             <NavLink to="/properties">Creches</NavLink>
 
-            <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="https://crechespot.netlify.app/">Creche Portal</NavLink>
 
+
+            {!isAuthenticated ? (
+              
+              <NavLink to="https://crechespot.netlify.app/">Creche Portal</NavLink>
+            ) : (
+              <NavLink to="/contact">Contact</NavLink>
+            )}
             {/* add property */}
             {isAuthenticated && hasRoleToken('rol_LHZcWfFRBAdOsjgA') && (
               <div onClick={handleAddPropertyClick}>Add Creche</div>
@@ -59,6 +64,8 @@ const Header = () => {
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
             {/* login button */}
             {!isAuthenticated ? (
+              
+
               <button className="button" onClick={loginWithRedirect}>
                 Login
               </button>
