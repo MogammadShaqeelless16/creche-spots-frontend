@@ -5,7 +5,7 @@ const data = [
     icon: <HiShieldCheck/>,
     heading: "Step 1",
     detail:
-      "To simplify and enhance the childcare journey for families by connecting them with quality creche options, ensuring peace of mind and support for every child's development.",
+      "Click Register to create your account, verify your email, then log in with your credentials to access your personal dashboard.",
   },
   {
     icon: <MdCancel />,
