@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="flexColStart f-right">
           <span className="primaryText">Information</span>
-          <span className="secondaryText">CrecheSpots is developed by Soft Glitch Solutions</span>
+          <span className="secondaryText">CrecheSpots is developed by Code Talkers</span>
           <div className="flexCenter f-menu">
             <span>Creches</span>
             <span>Services</span>
