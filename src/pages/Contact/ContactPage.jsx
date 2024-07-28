@@ -37,9 +37,13 @@ const ContactPage = () => {
     <Contact/>
       <div className="blog-boxes">
         <div className="blog-box">
-          <h3>How to get your creche registered</h3>
+          <h3>How to get your Creche registered</h3>
           <p>Fill in the application form to get registered with us.</p>
-          <button>Apply</button>
+          <button
+            onClick={() => window.open('https://forms.gle/fayc1r1vy8pfEbGD7', '_blank')}
+          >
+            Apply
+          </button>
         </div>
         <div className="blog-box">
           <h3>How to use Creche Spots app</h3>
@@ -47,7 +51,7 @@ const ContactPage = () => {
           <button>Download</button>
         </div>
         <div className="blog-box">
-          <h3>DOnate to Creches</h3>
+          <h3>Donate to Creches</h3>
           <p>Donate to creches registered with Creche Spots.</p>
           <button>Read More</button>
         </div>
