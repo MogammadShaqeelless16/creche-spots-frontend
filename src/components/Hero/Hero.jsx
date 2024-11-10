@@ -21,7 +21,7 @@ const Hero = () => {
               type: "ease-in",
             }}
             >
-              Welcome to<br /> CrecheSpot <br />
+              Welcome to<br /> CrecheSpots <br />
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
