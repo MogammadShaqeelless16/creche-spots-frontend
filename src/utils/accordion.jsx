@@ -1,28 +1,33 @@
-import { HiShieldCheck } from "react-icons/hi";
-import { MdCancel, MdAnalytics } from "react-icons/md";
+import { HiSearch } from "react-icons/hi";      // For Search
+import { MdCompareArrows } from "react-icons/md"; // For Compare
+import { HiPencilAlt } from "react-icons/hi";     // For Apply
+import { FaRegCreditCard } from "react-icons/fa";  // For Pay Securely
+
 const data = [
   {
-    icon: <HiShieldCheck/>,
-    heading: "Step 1",
+    icon: <HiSearch />,  // Updated icon for search
+    heading: "Search",
     detail:
-      "Click Register to create your account, verify your email, then log in with your credentials to access your personal dashboard.",
+      "Enter your location and browse creches near you - Discover both registered and recommended options to find the best fit for your family.",
   },
   {
-    icon: <MdCancel />,
-    heading: "Step 2",
-    detail: (
-      <>
-        Download the <a href="https://i.ayo.ba/aJBy?pid=organic&c=organic" target="_blank" rel="noopener noreferrer"style={{ color: 'blue', fontWeight: 'bold' }}>Ayoba App</a>.
-        
-        The app is also available FREE on the Google Play Store, AppStore [iOS], and Huawei App Gallery.
-      </>
-    ),
+    icon: <MdCompareArrows />,  // Updated icon for compare
+    heading: "Compare",
+    detail:
+      "View details on fees, services, facilities and more - Easily compare creches side-by-side to make informed choices based on what matters most to you.",
   },
   {
-    icon: <MdAnalytics />,
-    heading: "Step 3",
+    icon: <HiPencilAlt />,  // Updated icon for apply
+    heading: "Apply",
     detail:
-      "Browse our available programs and services, select the creche that suits your needs, and complete the application form to enroll.",
+      "Complete your child’s application in minutes - Save time by applying directly through the app, with no more complicated paperwork.",
+  },
+  {
+    icon: <FaRegCreditCard />,  // Updated icon for pay securely
+    heading: "Pay Securely",
+    detail:
+      "Manage fees and payments all in one place- Use CrecheSpots to make secure payments, anywhere, anytime, keeping you organized and worry-free.",
   },
 ];
+
 export default data;
