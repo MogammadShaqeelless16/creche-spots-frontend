@@ -40,7 +40,7 @@ const Value = () => {
         <div className="flexColStart v-right">
           <span className="orangeText">How to get started</span>
 
-          <span className="primaryText">3 Easy Steps</span>
+          <span className="primaryText">4 Easy Steps</span>
 
           <span className="secondaryText">
             Follow these steps, to easily register, complete your profile, and start exploring and enrolling in the services offered on our site.
