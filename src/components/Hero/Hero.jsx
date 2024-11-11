@@ -2,6 +2,9 @@ import "./Hero.css";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import SearchBar from "../SearchBar/SearchBar";
+import googlePlayIcon from '../../assets/google-play-icon.svg'; // Replace with your actual icon paths
+import appStoreIcon from '../../assets/app-store-icon.svg'; // Replace with your actual icon paths
+
 const Hero = () => {
 
 
@@ -29,33 +32,17 @@ const Hero = () => {
             <span>Discover Care, Find CrecheSpot.</span>
           </div>
 
-          <div className="flexCenter stats">
-            <div className="flexColCenter stat">
-            <span>
-            <CountUp start={0} end={19} duration={4} /> <span>+</span>
-
-              </span>
-              <span className="secondaryText">Creche Registered</span>
-            </div>
-
-            <div className="flexColCenter stat">
-              <span>
-                <CountUp start={1950} end={2000} duration={4} /> <span>+</span>
-              </span>
-              <span className="secondaryText">Happy Customer</span>
-            </div>
-
-            <div className="flexColCenter stat">
-              <span>
-                <CountUp end={1} /> <span>+</span>
-              </span>
-              <span className="secondaryText">Creche app</span>
-            </div>
-          </div>
+          <div className="download-buttons">
+        <a href="https://commiploy.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <img src={googlePlayIcon} alt="Download on Google Play" className="download-icon" />
+        </a>
+        <a href="https://commiploy.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <img src={appStoreIcon} alt="Download on the App Store" className="download-icon" />
+        </a>
         </div>
-
-        {/* right side */}
-        <div className="flexCenter hero-right">
+        </div>
+              {/* right side */}
+              <div className="flexCenter hero-right">
           <motion.div
             initial={{ x: "7rem", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -68,7 +55,7 @@ const Hero = () => {
             <img src="./hero-image.png" alt="houses" />
           </motion.div>
         </div>
-      </div>
+        </div>
     </section>
   );
 };

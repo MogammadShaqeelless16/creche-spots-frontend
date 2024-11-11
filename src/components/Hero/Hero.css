@@ -12,6 +12,21 @@
 }
 
 
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between buttons */
+}
+
+.download-btn {
+  display: inline-block; /* Change to inline-block for image links */
+}
+
+.download-icon {
+  width: 20vh; /* Adjust the size according to your preference */
+  height: auto;
+}
+
 /* left side */
 .hero-left {
   gap: 3rem;
