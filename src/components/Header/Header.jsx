@@ -5,28 +5,21 @@ import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
 import { Link, NavLink } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import ProfileMenu from "../ProfileMenu/ProfileMenu";
 import AddPropertyModal from "../AddPropertyModal/AddPropertyModal";
-import useAuthCheck from "../../hooks/useAuthCheck.jsx";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
   const [modalOpened, setModalOpened] = useState(false);
-  const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
-  const { validateLogin } = useAuthCheck();
-
-  // Define the namespace used in the Auth0 Action
-  const namespace = 'https://crechespots.app/';
-  
-  // Function to check for the specific role token
-  const hasRoleToken = (roleToken) => {
-    return user && user[`${namespace}roles`] && user[`${namespace}roles`].includes(roleToken);
-  };
 
   const handleAddPropertyClick = () => {
     setModalOpened(true);
+  };
+
+  // Function to navigate to the Creche Portal
+  const handleLoginRedirect = () => {
+    window.location.href = "https://crechespots.netlify.app/"; // Direct link to Creche Portal
   };
 
   return (
@@ -47,28 +40,20 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-
-            {!isAuthenticated ? (
-              
-              <NavLink to="https://crechespots.netlify.app/">Creche Portal</NavLink>
-            ) : (
-              <NavLink to="/contact">Contact</NavLink>
-            )}
+            <NavLink to="https://crechespots.netlify.app/" target="_blank">
+              Creche Portal
+            </NavLink>
             {/* add property */}
-            {isAuthenticated && hasRoleToken('rol_LHZcWfFRBAdOsjgA') && (
-              <div onClick={handleAddPropertyClick}>Add Creche</div>
-            )}
+            <div onClick={handleAddPropertyClick}>Add Creche</div>
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
-            {/* login button */}
-            {!isAuthenticated ? (
-              
 
-              <button className="button" onClick={loginWithRedirect}>
-                Login
-              </button>
-            ) : (
-              <ProfileMenu user={user} logout={logout} />
-            )}
+            {/* login / sign up button */}
+            <button className="button" onClick={handleLoginRedirect}>
+              Login / Sign Up
+            </button>
+
+            {/* If user is logged in, show profile menu */}
+            {/* Add your authenticated logic here if necessary */}
           </div>
         </OutsideClickHandler>
 
