@@ -47,9 +47,6 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <NavLink to="/properties">Creches</NavLink>
-
-
 
             {!isAuthenticated ? (
               
