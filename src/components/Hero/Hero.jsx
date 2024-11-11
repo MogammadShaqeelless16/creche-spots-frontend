@@ -28,7 +28,7 @@ const Hero = () => {
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>Find a variety of creche within your area with price range</span>
+            <span>Find trusted creches, compare options, apply, and pay—all in one secure platform designed with families in mind.</span>
             <span>Discover Care, Find CrecheSpot.</span>
           </div>
 
