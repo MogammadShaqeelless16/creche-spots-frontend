@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="flexColStart f-left">
           <img src="./logo2.png" alt="" width={120} />
           <span className="secondaryText">
-            Our vision is to make all people <br />
-            the best place to live for them.
+          To create a world where high-quality, accessible, <br />
+          and safe childcare solutions empower families.
           </span>
         </div>
 
