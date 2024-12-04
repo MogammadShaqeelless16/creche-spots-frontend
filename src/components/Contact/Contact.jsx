@@ -2,7 +2,12 @@ import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import { HiChatBubbleBottomCenter } from "react-icons/hi2";
+import { FaEnvelope } from "react-icons/fa"; // General email icon
+import { IoIosInformationCircle } from "react-icons/io"; // Info icon
+import { GiReceiveMoney } from "react-icons/gi"; // Finance icon
+import { FaHandshake } from "react-icons/fa"; // Sales icon
+
 const Contact = () => {
   return (
     <div id="contact-us" className="c-wrapper">
@@ -12,65 +17,60 @@ const Contact = () => {
           <span className="orangeText">Our Contact Us</span>
           <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
-          Contact us to add your creche to our database. We are always ready to help by providing the best services for you. We believe a good place to live can make your life better.{" "}
+            Contact us to add your creche to our database. We are always ready to help by providing the best services for you. We believe a good place to live can make your life better.
           </span>
 
           <div className="flexColStart contactModes">
-            {/* first row */}
+            {/* third row (emails) */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <MdCall size={25} />
+                    <FaEnvelope size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Support</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <a href="mailto:support@crechespots.co.za" className="flexCenter button">Email us</a>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <IoIosInformationCircle size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Info</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <a href="mailto:info@crechespots.co.za" className="flexCenter button">Email us</a>
               </div>
             </div>
 
-            {/* second row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <GiReceiveMoney size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Finance</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <a href="mailto:finance@crechespots.co.za" className="flexCenter button">Email us</a>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
+                    <FaHandshake size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Sales</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <a href="mailto:sales@crechespots.co.za" className="flexCenter button">Email us</a>
               </div>
             </div>
           </div>
