@@ -33,10 +33,10 @@ const Hero = () => {
           </div>
 
           <div className="download-buttons">
-        <a href="https://commiploy.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
+        <a href="https://crechespot.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
           <img src={googlePlayIcon} alt="Download on Google Play" className="download-icon" />
         </a>
-        <a href="https://commiploy.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
+        <a href="https://crechespot.netlify.app/" target="_blank" rel="noopener noreferrer" className="download-btn">
           <img src={appStoreIcon} alt="Download on the App Store" className="download-icon" />
         </a>
         </div>
