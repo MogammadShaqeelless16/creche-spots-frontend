@@ -11,6 +11,34 @@ import googlePlayIcon from '../../assets/google-play-icon.svg';
 import appStoreIcon from '../../assets/app-store-icon.svg';
 import "./Value.css";
 
+const listItems = [
+  {
+    id: 1,
+    text: "Find Local Creches",
+    bgColor: "bg-soft-purple",
+  },
+  {
+    id: 2,
+    text: "Compare Options",
+    bgColor: "bg-soft-pink",
+  },
+  {
+    id: 3,
+    text: "Submit & Track Applications",
+    bgColor: "bg-soft-peach",
+  },
+  {
+    id: 4,
+    text: "Make Payments",
+    bgColor: "bg-soft-blue",
+  },
+  {
+    id: 5,
+    text: "and more!",
+    bgColor: "bg-soft-green",
+  },
+];
+
 const Value = () => {
   return (
     <section id="value" className="v-wrapper">
@@ -20,7 +48,7 @@ const Value = () => {
           <h1 className="download-title" style={{ color: "#3a5dc4" }}>
             Download the app!
           </h1>
-
+          <br></br>
           <div className="download-buttons">
             <a
               href="https://crechespot.netlify.app/"
@@ -39,7 +67,7 @@ const Value = () => {
               <img src={appStoreIcon} alt="Download on the App Store" className="download-icon" />
             </a>
           </div>
-
+          <br></br>
           <div className="image-container">
             <img src="./mavis_lerato_naeema.png" alt="App preview" />
           </div>
@@ -48,8 +76,17 @@ const Value = () => {
         {/* Right side */}
         <div className="v-right">
           <div className="image-placeholder">
-            {/* Placeholder for an image */}
-            <img src="./mavis_lerato_naeema.png" alt="Placeholder" />
+            {listItems.map((item) => (
+              <div
+                key={item.id}
+                className={`flex items-center gap-4 p-4 rounded-lg transition-transform hover:scale-102 cursor-pointer ${item.bgColor}`}
+              >
+                <div className="number">
+                  <span>{item.id}.</span>
+                </div>
+                <span className="text-xl font-display">{item.text}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

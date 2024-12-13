@@ -51,22 +51,54 @@
 .image-container img {
   width: 100%;
   max-width: 300px;
-  height: auto;
-  border-radius: 8px; /* Optional styling */
+  border-radius: 8px;
 }
+
+/* Soft colors */
+.bg-soft-purple { background-color: #E5DEFF; }
+.bg-soft-pink { background-color: #FFDEE2; }
+.bg-soft-peach { background-color: #FDE1D3; }
+.bg-soft-blue { background-color: #D3E4FD; }
+.bg-soft-green { background-color: #F2FCE2; }
 
 /* Right side styles */
 .v-right {
   flex: 1;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-placeholder div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.image-placeholder div:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.02);
+}
+
+.image-placeholder .number {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.image-placeholder img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border: 2px dashed #ccc; /* Placeholder style */
-  border-radius: 8px;
+.image-placeholder span {
+  font-size: 1.2rem;
 }
+
