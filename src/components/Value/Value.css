@@ -1,55 +1,72 @@
-
-.v-container > div {
-  flex: 1;
-}
-.v-right {
-  gap: 0.5rem;
-}
-.accordion {
-  margin-top: 2rem;
-  border: none;
-}
-.accordionItem {
-  background: white;
-  border: 0.8px solid rgba(128, 128, 128, 0.143);
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
+/* General styles for the Value component */
+.v-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Adjust as needed */
 }
 
-.accordionItem.expanded {
-  box-shadow: var(--shadow);
-  border-radius: 6px;
-}
-.accordionButton {
-  background: white;
-  padding: 1rem;
-  width: 100%;
+.v-container {
+  display: flex;
   justify-content: space-between;
-  cursor: pointer;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
 
-.icon {
-  padding: 10px;
-  background: #eeeeff;
-  border-radius: 5px;
-}
-.icon svg {
-  fill: var(--blue);
-}
-
-.accordionButton .primaryText{
-    font-size: 1.1rem;
+/* Left side styles */
+.v-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-@media (max-width: 1024px) {
-    .v-container{
-        flex-direction: column;
-    }
+.download-title {
+  font-family: 'MoreSugar', sans-serif;
+  font-size: 5.5em;
+  color: #3a5dc4;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .accordionButton .primaryText{
-        font-size: .8rem;
-    }
+.download-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Adjust as needed */
+}
+
+.download-icon {
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px; /* Optional styling */
+}
+
+/* Right side styles */
+.v-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 2px dashed #ccc; /* Placeholder style */
+  border-radius: 8px;
 }

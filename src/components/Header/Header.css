@@ -32,7 +32,7 @@
     flex-direction: column;
     right: 4rem;
     top: 3rem;
-    background: white;
+    background: #f4fcfe;
     display: flex;
     border-radius: 10px;
     transition: all 200ms ease;
