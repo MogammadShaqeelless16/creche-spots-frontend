@@ -8,6 +8,8 @@ import Hero from "../components/Hero/Hero";
 import Residencies from "../components/Residencies/Residencies";
 import Value from "../components/Value/Value";
 import Creche from "../components/Creche/Creche"
+import Achievements from "../components/Achievements/Achievements"
+import AboutUs from "../components/AboutUs/AboutUs"
 
 const Website = () => {
   return (
@@ -17,6 +19,8 @@ const Website = () => {
     </div>
     <Value/>
     <Creche/>
+    <Achievements/>
+    <AboutUs />
     <Contact/>
     <GetStarted/>
   </div>

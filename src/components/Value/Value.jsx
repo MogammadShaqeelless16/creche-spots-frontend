@@ -69,7 +69,7 @@ const Value = () => {
           </div>
           <br />
           <div className="image-container">
-            <img src="./mavis_lerato_naeema.png" alt="App preview" />
+            <img src="./delisha_download_app.png" alt="App preview" />
           </div>
         </div>
 

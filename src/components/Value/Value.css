@@ -26,7 +26,7 @@
 
 .download-title {
   font-family: 'MoreSugar', sans-serif;
-  font-size: 5.5em;
+  font-size: 4.5em;
   color: #3a5dc4;
   margin-bottom: 1rem;
 }
@@ -49,8 +49,10 @@
 }
 
 .image-container img {
-  width: 100%;
-  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensures the image stays within container boundaries */
+  height: auto; /* Preserves aspect ratio */
   border-radius: 8px;
 }
 
@@ -101,7 +103,7 @@
 }
 
 .image-placeholder span {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 /* Responsive styles */

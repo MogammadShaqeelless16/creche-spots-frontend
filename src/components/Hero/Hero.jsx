@@ -25,7 +25,7 @@ const Hero = () => {
             className="center-image"
           />
           <img
-            src="./naeema_jungkook.png"  // Corrected image path
+            src="./shaqeel_delisha.png"  // Corrected image path
             alt="Side Image 2"
             className="side-image"
           />

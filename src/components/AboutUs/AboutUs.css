@@ -1,0 +1,80 @@
+/* AboutUs.css */
+
+.about-us-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  color: #4B6BFB;
+  font-family: 'MoreSugar', sans-serif;
+}
+
+.about-us-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  font-family: 'MoreSugar', sans-serif;
+}
+
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-us-section img.section-image {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.about-us-section img.section-image:hover {
+  transform: scale(1.05);
+}
+
+.about-us-section .content {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.about-us-section.mission .content {
+  background-color: #bd84f5;
+}
+
+.about-us-section.vision .content {
+  background-color: #f784a3;
+}
+
+.about-us-section.values .content {
+  background-color: #84a8f6;
+}
+
+.about-us-section h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-us-section p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-us-section img.section-image {
+    width: 100px;
+  }
+}

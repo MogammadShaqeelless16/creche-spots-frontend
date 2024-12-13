@@ -51,6 +51,10 @@ const Creche = () => {
               </div>
             </div>
           ))}
+
+          <div className="image-container">
+            <img src="./shaqeel_malakai_delisha.png" alt="App preview" />
+          </div>
         </div>
 
         {/* Right Column (Form and Button) */}

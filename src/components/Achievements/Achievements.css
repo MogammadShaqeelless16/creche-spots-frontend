@@ -1,0 +1,84 @@
+/* General styles for the Achievements component */
+.achievements-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    font-family: 'MoreSugar', sans-serif;
+  }
+  
+  .achievements-title {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .achievements-title h1 {
+    font-size: 3rem;
+    color: #4B6BFB;
+    margin-bottom: 1rem;
+  }
+  
+  .achievements-title p {
+    font-size: 1.25rem;
+    color: #4B6BFB;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .achievement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .achievement-item img {
+    object-fit: contain;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .achievement-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .achievement-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .achievement-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .achievements-container {
+      padding: 2rem;
+    }
+  
+    .achievement-item img {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    .achievements-title h1 {
+      font-size: 2rem;
+    }
+  
+    .achievements-title p {
+      font-size: 1rem;
+    }
+  }
+  
