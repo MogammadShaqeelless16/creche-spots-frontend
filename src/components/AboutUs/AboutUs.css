@@ -2,13 +2,15 @@
 
 .about-us-header {
   text-align: center;
-  margin-bottom: 2rem;
+
 }
 
 .header-title {
   font-size: 3rem;
+  padding: 2rem;
   color: #4B6BFB;
   font-family: 'MoreSugar', sans-serif;
+  background-color: #f4fcfe;
 }
 
 .about-us-container {
@@ -16,6 +18,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   font-family: 'MoreSugar', sans-serif;
+  background-color: #f4fcfe;
 }
 
 .about-us-section {

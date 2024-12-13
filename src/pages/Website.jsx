@@ -21,7 +21,6 @@ const Website = () => {
     <Creche/>
     <Achievements/>
     <AboutUs />
-    <Contact/>
     <GetStarted/>
   </div>
   )

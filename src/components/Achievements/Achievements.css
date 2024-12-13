@@ -11,6 +11,7 @@
   
   .achievements-title {
     max-width: 600px;
+    font-family: 'MoreSugar', sans-serif;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -18,6 +19,7 @@
   .achievements-title h1 {
     font-size: 3rem;
     color: #4B6BFB;
+    font-family: 'MoreSugar', sans-serif;
     margin-bottom: 1rem;
   }
   

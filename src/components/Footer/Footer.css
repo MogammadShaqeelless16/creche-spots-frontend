@@ -1,24 +1,62 @@
-.f-container{
+/* Footer.css */
+
+/* Footer Wrapper */
+.f-wrapper {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Inner Width container */
+  .f-container {
+    display: flex;
     justify-content: space-between;
-    border-top: .5px solid rgba(0,0,0,0.148)
-}
-.f-left{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  /* Left section styles */
+  .f-left img {
+    width: 120px;
+  }
+  
+  .f-left .secondaryText {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Right section styles */
+  .f-right {
+    text-align: left;
+  }
+  
+  .f-right .primaryText {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .f-right .secondaryText {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Social Icons Section */
+  .f-social-icons {
+    display: flex;
+    justify-content: center;
     gap: 1rem;
-}
-.f-menu{
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    font-weight: 500;
-}
-@media (max-width: 768px) {
-    .f-container{
-        justify-content: center;
-    }
-    .f-container>div{
-        align-items: center!important;
-        text-align: center;
-    }
-    .f-right{
-        justify-content: center;
-    }
-}
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #4B6BFB;
+  }
+  
