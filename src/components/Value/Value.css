@@ -93,12 +93,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: white; /* Match background with the style of the image */
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: 'MoreSugar';
+  color: #3a5dc4; /* Match color with the text or theme */
 }
 
 .image-placeholder span {
   font-size: 1.2rem;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .v-container {
+    flex-direction: column;
+  }
+  
+  .v-left, .v-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .download-title {
+    font-size: 3rem; /* Smaller font for mobile */
+  }
+
+  .image-placeholder .number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem; /* Adjust number size */
+  }
+  
+  .image-placeholder span {
+    font-size: 1rem; /* Adjust text size */
+  }
+}

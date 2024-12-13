@@ -1,0 +1,180 @@
+/* Importing custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sugar&display=swap');
+
+/* Adding custom MoreSugar font */
+@font-face {
+  font-family: 'MoreSugar';
+  src: url('../../assets/fonts/more-sugar.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom pastel color extensions */
+.custom-colors {
+  --pastel-peach: #FDE1D3;
+  --pastel-blue: #D3E4FD;
+  --pastel-green: #F2FCE2;
+}
+
+/* General container and layout styles */
+
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.space-x-8 {
+  margin-right: 2rem; /* Space between columns */
+}
+
+.items-center {
+  align-items: center;
+}
+
+.bg-white {
+  background-color: #f4fcfe;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.md\:p-8 {
+  padding: 2rem;
+}
+
+.max-w-4xl {
+  max-width: 64rem; /* 1024px */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.md\:text-5xl {
+  font-size: 3rem;
+}
+
+.font-display {
+  font-family: 'MoreSugar', cursive, sans-serif;
+}
+
+.title{
+  font-size: 2.25rem;
+  color: #b612cb;
+  padding-left: 1rem;
+}
+
+.descript{
+  padding-left: 1rem;
+}
+
+.text-more-sugar {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'MoreSugar', cursive, sans-serif;
+  color: #3a5dc4;
+}
+
+.bg-pastel-peach {
+  background-color: var(--pastel-peach);
+}
+
+.bg-pastel-blue {
+  background-color: var(--pastel-blue);
+}
+
+.bg-pastel-green {
+  background-color: var(--pastel-green);
+}
+
+.text-gray-600 {
+  color: #6B7280;
+}
+
+
+
+.space-y-6 {
+  margin-bottom: 1.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.transition-transform {
+  transition: transform 0.2s ease-out;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Two-column layout for Creche */
+.md\:flex-row {
+  flex-direction: row;
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 1024px) {
+  .hero-title-text {
+    font-size: 4rem; /* Adjust for smaller screen sizes */
+  }
+
+  .side-image {
+    width: 30%; /* Slightly larger images on medium screens */
+  }
+
+  .center-image {
+    width: 50%;
+  }
+
+  .images-container {
+    gap: 0.75rem; /* Adjust spacing for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-text {
+    font-size: 3.5rem; /* Further reduction for tablets */
+  }
+
+  .side-image, .center-image {
+    width: 100%; /* Full width images on smaller screens */
+  }
+
+  .images-container {
+    display: none; /* Hide the images-container on mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-text {
+    font-size: 2.5rem; /* Mobile view - even smaller text */
+  }
+}

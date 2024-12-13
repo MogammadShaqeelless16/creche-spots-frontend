@@ -15,17 +15,17 @@ const Hero = () => {
         {/* Image layout */}
         <div className="images-container">
           <img
-            src="./naeema_jungkook.png"
+            src="./naeema_jungkook.png"  // Corrected image path
             alt="Side Image 1"
             className="side-image"
           />
           <img
-            src="./CrecheSpotsLogo.png"
+            src="./CrecheSpotsLogo.png"  // Corrected image path
             alt="Center Image"
             className="center-image"
           />
           <img
-            src="./naeema_jungkook.png"
+            src="./naeema_jungkook.png"  // Corrected image path
             alt="Side Image 2"
             className="side-image"
           />

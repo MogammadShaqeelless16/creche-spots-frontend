@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-/* Your existing CSS rules */
 .hero-wrapper {
   display: flex;
   justify-content: center;
@@ -52,4 +51,136 @@
   width: 60%;
   height: auto;
   object-fit: cover;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 1024px) {
+  .hero-title-text {
+    font-size: 4rem; /* Adjust for smaller screen sizes */
+  }
+
+  .side-image {
+    width: 30%; /* Slightly larger images on medium screens */
+  }
+
+  .center-image {
+    width: 50%;
+  }
+
+  .images-container {
+    gap: 0.75rem; /* Adjust spacing for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-text {
+    font-size: 3.5rem; /* Further reduction for tablets */
+  }
+
+  .side-image, .center-image {
+    width: 100%; /* Full width images on smaller screens */
+  }
+
+  .images-container {
+    display: none; /* Hide the images-container on mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-text {/* Importing the Google Sugar font */
+    @import url('https://fonts.googleapis.com/css2?family=Sugar&display=swap');
+    
+    /* Adding custom MoreSugar font */
+    @font-face {
+      font-family: 'MoreSugar';
+      src: url('../../assets/fonts/more-sugar.regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    .hero-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #f4fcfe; /* Adjust as needed */
+    }
+    
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .hero-title-text {
+      font-family: 'MoreSugar', 'Sugar', sans-serif; /* Fallback fonts */
+      font-size: 5.5rem; /* Adjust as needed */
+      color: #3a5dc4; /* Text color */
+    }
+    
+    .images-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; /* Adjust spacing between images */
+    }
+    
+    .side-image {
+      width: 20%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .center-image {
+      width: 60%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    /* Responsive styles for mobile devices */
+    @media (max-width: 1024px) {
+      .hero-title-text {
+        font-size: 4rem; /* Adjust for smaller screen sizes */
+      }
+    
+      .side-image {
+        width: 30%; /* Slightly larger images on medium screens */
+      }
+    
+      .center-image {
+        width: 50%;
+      }
+    
+      .images-container {
+        gap: 0.75rem; /* Adjust spacing for medium screens */
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title-text {
+        font-size: 3.5rem; /* Further reduction for tablets */
+      }
+    
+      .side-image, .center-image {
+        width: 100%; /* Full width images on smaller screens */
+      }
+    
+      .images-container {
+        display: none; /* Hide the images-container on mobile view */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-title-text {
+        font-size: 2.5rem; /* Mobile view - even smaller text */
+      }
+    }
+    
+    font-size: 2.5rem; /* Mobile view - even smaller text */
+  }
 }

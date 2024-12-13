@@ -48,7 +48,7 @@ const Value = () => {
           <h1 className="download-title" style={{ color: "#3a5dc4" }}>
             Download the app!
           </h1>
-          <br></br>
+          <br />
           <div className="download-buttons">
             <a
               href="https://crechespot.netlify.app/"
@@ -67,7 +67,7 @@ const Value = () => {
               <img src={appStoreIcon} alt="Download on the App Store" className="download-icon" />
             </a>
           </div>
-          <br></br>
+          <br />
           <div className="image-container">
             <img src="./mavis_lerato_naeema.png" alt="App preview" />
           </div>

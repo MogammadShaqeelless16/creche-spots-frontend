@@ -1,6 +1,7 @@
 .h-wrapper {
   z-index: 99;
   position: sticky;
+  background-color: #f4fcfe;
   top: 0;
 }
 .h-container {
